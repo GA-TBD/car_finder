@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
 
 get '/' do
-  'root route!!'
+  erb :index
 end
 
 
