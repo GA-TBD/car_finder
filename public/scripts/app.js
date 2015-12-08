@@ -49,6 +49,11 @@ function toggleUserButtons () {
       });
   };
 
+function showRegisterLogin() {
+  $('#register-login').show('slow', function() {
+    console.log('div shown')
+  });
+}
 
 
 $(document).ready(function() {
