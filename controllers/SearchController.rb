@@ -10,9 +10,9 @@ post '/' do
 
   user_car = {
   "make" => params[:make],
-  "model" => 'asdf',
-  "style" => "4D",
-  "color" => "BLK",
+  "model" => params[:model],
+  "style" => params[:style],
+  "color" => params[:color],
   "state" => params[:state],
   "plate" => params[:plate],
   }

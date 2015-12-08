@@ -25,6 +25,9 @@
   * installation instructions
 
 ## FUTURE FEATURES - WANTED
+* handle httparty error
+  * offline
+  * doesn't respond.  timeout. This happened while testing!
 * debug account that displays some cars in the lots
 
 
