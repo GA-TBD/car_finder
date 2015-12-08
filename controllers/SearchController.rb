@@ -6,7 +6,6 @@ end
 
 post '/' do
   # filter data
-  p '--------------posted search params!!!'
 
   user_car = {
   "make" => params[:make],
@@ -17,6 +16,8 @@ post '/' do
   "plate" => params[:plate],
   }
 
+  p '--------------posted search params received and stored in user_car'
+  p 'user_car: '
   p user_car
 
   @possible_matched_cars = search_for_matches(user_car)

@@ -33,20 +33,12 @@ def search_for_matches(user_car)
     user_car['model'] = "this_better_not_match_or_the_chi_pd_is_really_screwing_up"
   end
 
-  # if user_car['towed_to_address'] == nil
-  #   user_car['towed_to_address'] = "this_better_not_match_or_the_chi_pd_is_really_screwing_up"
-  # end
-  # if user_car['tow_facility_phone'] == nil
-  #   user_car['tow_facility_phone'] = "this_better_not_match_or_the_chi_pd_is_really_screwing_up"
-  # end
-  # if user_car['inventory_number'] == nil
-  #   user_car['inventory_number'] = "this_better_not_match_or_the_chi_pd_is_really_screwing_up"
-  # end
-
   if user_car['tow_date'] == nil
     user_car['tow_date'] = "this_better_not_match_or_the_chi_pd_is_really_screwing_up"
   end
 
+  p '------------------search_for_matches()'
+  p 'sanitized user_car: '
   p user_car
 
   all_cars.each do |towed_car|
