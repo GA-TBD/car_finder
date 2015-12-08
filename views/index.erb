@@ -16,7 +16,6 @@
       </tr>
       </table>
       <input class="search-button" type="submit" value="☞ SEARCH"></input>
-      <!-- <p class="toggle" id="searchCarToggle" onclick="toggleSearchCar()">Don't know your liscence plate?</p> -->
       </fieldset>
   </form>
   <div id ="searchbycar">
@@ -274,21 +273,21 @@
             </tr>
             </table>
             <input class="search-button" type="submit" value="☞ SEARCH"></input>
-            <!-- <p class="toggle" id="searchPlateToggle" onclick="toggleSearchPlate()">Search by liscence plate instead?</p> -->
             </fieldset>
           </form>
         </div>
 
-        <div id="no-user-logged-in">
-        <div class="button-item">↪ login </div>
-        <div class="button-item">✎ register </div>
-        </div>
-        <div id="user-logged-in">
+
+      <div id="no-user-logged-in">
+        <div class="button-item" onclick="showRegisterLogin()">↪ login </div>
+        <div class="button-item" onclick="showRegisterLogin()">✎ register </div>
+      </div>
+      <div id="user-logged-in">
         <div class="button-item">✌ my cars </div>
         <div class="button-item">⎋ logout </div>
       </div>
 
-      <!-- some sort of user logic needs to toggle this ^  -->
+      <!-- some sort of embedded ruby user logic needs to toggle this ^  -->
 
     </section>
 
@@ -296,4 +295,8 @@
     <div id="register-login">
       <%= erb :register_login %>
     </div>
+    <div id="results">
+      <%= erb :results %>
+    </div>
+
   </section>

@@ -18,9 +18,15 @@ h3 {
 }
 
 
-.other-views-header {
+.login-header {
   margin-top: -1.1em;
   font-size: 3em;
+}
+
+.other-views-header {
+  margin-top: -3.1em;
+  font-size: 2em;
+  margin-left: -1em;
 }
 
 fieldset {
@@ -29,7 +35,7 @@ fieldset {
   background: rgba(12, 165, 176, 0.7);
 }
 
-#searchbycar, #searchbyplate, #no-user-logged-in, #user-logged-in  {
+#searchbycar, #searchbyplate, #user-logged-in, #register-login  {
   display: none;
 }
 
@@ -73,7 +79,7 @@ td {
 }
 
 
-.search-button {
+.search-button, .submit-button {
   border: 1px solid white;
   background: #0CA5B0;
   font-family: 'Righteous', cursive;
@@ -81,10 +87,13 @@ td {
   font-size: 1em;
   border-radius: 18px;
   font-weight: bold;
-  margin-left: 5em;
 }
 
-.search-button:hover {
+.search-button {
+    margin-left: 5em;
+}
+
+.search-button:hover, .submit-button:hover {
   background: #F8F4E4;
   color: #0CA5B0;
   font-weight: bold;
@@ -118,13 +127,16 @@ section {
   float: left;
 }
 
+p {
+  	font-family: Verdana,Arial,sans-serif;
+  	font-size: 0.7em;
+}
 
 .other-views {
   float: right;
   width: 70%;
-  border: 2px solid blue;
   height:  30em;
-  padding: 20px;
+  padding: 30px;
 }
 
 .register-login {
@@ -137,11 +149,17 @@ section {
   height: 20em;
 }
 
-#register-login {
+#register-login{
   float: right;
   margin-right: 15%;
 }
 
+#results {
+ float: left;
+ margin-left: 5em;
+ width: 85%;
+ margin-top: -20px;
+}
 
 .inputform {
   padding: 2em;
@@ -158,4 +176,23 @@ section {
   width: 8em;
   padding: 10px;
   margin: 0.5em;
+}
+
+.resultsholder {
+  border: 2px solid #F8F4E4;
+  border-radius: 30px;
+  background: rgba(12, 165, 176, 0.7);
+  margin-top: 3em;
+  padding: 4em;
+  width: 85%;
+}
+
+#primary_results {
+  height: 2em;
+  padding-bottom: 2px;
+}
+
+#secondary_results {
+  height: 14em;
+  padding-bottom: 2px;
 }
