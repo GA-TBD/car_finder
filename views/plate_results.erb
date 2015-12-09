@@ -4,8 +4,8 @@
 
   <div class="primary-results-message">
     <% if @plate_match_car %>
-    <p> <span>Good news!</span> We <span> found </span> a car with # <%=@user_car['plate']%>, get it here: </p>
-    <p><span> <%=@plate_match_car['towed_to_address']%></span> call them at <span><%=@plate_match_car['tow_facility_phone']%><span> or <span> Get Google Map Directions!</span>
+    <p><i class="material-icons">beenhere</i><span>Good news!</span> We <span> found </span> a car with # <%=@user_car['plate']%>, get it here: </p>
+    <p><span><i class="material-icons">pin_drop</i><%=@plate_match_car['towed_to_address']%></span> call them at <span><%=@plate_match_car['tow_facility_phone']%><span> or <span> Get Google Map Directions!</span>
     <% else %>
     <p> <span>Oh hey! </span> We <span> did not find </span> a car with # <%=@user_car['plate']%> in any of the Chicago lots! </p>
     <p>Hope you find your car, dude! </p>

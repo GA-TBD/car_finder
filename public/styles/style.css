@@ -166,9 +166,9 @@ p {
   border-radius: 30px;
   background: rgba(12, 165, 176, 0.7);
   width: 18em;
-  margin-top: 2em;
   margin-right: 1em;
   height: 16em;
+  margin-top: 20px;
 }
 
 #register {
@@ -232,20 +232,34 @@ p {
   margin-bottom: 2em;
 }
 
+.material-icons2 {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
+  font-size: 40px;  /* Preferred icon size */
   display: inline-block;
   width: 1em;
   height: 1em;
-  line-height: 1;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+}
+
+i {
+  margin-bottom: 20px;
 }
 
 .message {
@@ -259,4 +273,8 @@ p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+span {
+
 }
