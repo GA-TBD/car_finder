@@ -28,6 +28,7 @@
 
 
 ## FUTURE FEATURES - WANTED
+* seperate search algorithm by plate & by car info
 * handle httparty error
   * offline
   * doesn't respond.  timeout. This happened while testing!

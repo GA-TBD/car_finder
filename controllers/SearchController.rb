@@ -17,13 +17,13 @@ end
 post '/' do
   # filter data
 
-  user_car = {
+  @user_car = {
   "make" => params[:make],
   "model" => params[:model],
   "style" => params[:style],
   "color" => params[:color],
   "state" => params[:state],
-  "plate" => params[:plate],
+  "plate" => params[:plate]
   }
 
   # need @type_of_search logic (i need it on the other side)
@@ -41,9 +41,14 @@ post '/' do
   p user_car
 
   @possible_matched_cars = search_for_matches(user_car)
+  @plate_match_car = nil
 
-  erb :results
+  if @possible_matched_cars[0][:plate] == @user_car[:plate]
+    @plate_match_car = @possible_matched_cars[0]
+    erb :plate_results
+  else
+    erb :car_results
+  end
 
-end
 
 end
