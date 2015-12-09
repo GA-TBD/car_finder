@@ -2,12 +2,12 @@
   <h3 class="other-views-header"><%=current_user.username%>'s cars</h3>
   <% for current_user_car in @current_user_cars %>
   <li>
-    Plate: <%=car.plate%>,
+    Plate: <%=car['plate']%>,
     State: <%=car.state%>,
     Make: <%=car.make%>,
     Model: <%=car.model%>,
     Style: <%=car.style%>,
     Color: <%=car.color%>
-  </li> 
+  </li>
   <% end %>
 </div>
