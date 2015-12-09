@@ -18,6 +18,11 @@
   * double check that user calls on the layout page all work (blocks out appropriately depending on user/guest)
 
 * views
+  * build out account_view
+  * build out car_results:
+    * add dynamic list viewing
+    * loop through ERB
+
 
 
 * install on server
