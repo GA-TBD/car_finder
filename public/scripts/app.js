@@ -40,32 +40,11 @@ $(function() {
 //   });
 
 
-function toggleUserButtons () {
-    $("#no-user-logged-in").hide('slow', function() {
-      console.log("guest buttons ")
-      });
-    $("#searchbyplate").hide('slow', function() {
-      console.log("hiding plate")
-      });
-  };
 
-function showRegisterLogin() {
-  $('#register-login').show('slow', function() {
-    console.log('div shown')
-  });
+function showResults() {
+  window.location.href = "/results";
 }
 
-
-$(document).ready(function() {
-  $('#user-logged-in').show('fast', function() {
-    $('#searchbyplate').show('fast', function() {
-      $('#searchbycar').show('fast', function() {
-        //animation occured
-      });
-    });
-  });
-
-
-
-
-});
+function showRegisterLogin() {
+  window.location.href = "/register_login";
+}

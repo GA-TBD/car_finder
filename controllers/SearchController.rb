@@ -1,7 +1,16 @@
 class SearchController < ApplicationController
 
 get '/' do
-  erb :index
+  erb :register_login
+end
+
+get '/results' do
+  erb :results
+end
+
+
+get '/register_login' do
+  erb :register_login
 end
 
 post '/' do
@@ -21,9 +30,14 @@ post '/' do
   p user_car
 
   @possible_matched_cars = search_for_matches(user_car)
+  
+  redirect '/results'
 
+<<<<<<< HEAD
 
   erb :results
+=======
+>>>>>>> 7c677c7ee3b848b67a9de815098815a26c8e4dd8
 end
 
 end

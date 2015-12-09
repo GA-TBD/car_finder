@@ -3,9 +3,10 @@ body {
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('http://i.imgur.com/ocM83sq.jpg');
+  background-image: url('http://i.imgur.com/5ngwe6C.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 1em;
 }
 
 h3 {
@@ -35,9 +36,7 @@ fieldset {
   background: rgba(12, 165, 176, 0.7);
 }
 
-#searchbycar, #searchbyplate, #user-logged-in, #register-login  {
-  display: none;
-}
+
 
 #no-user-logged-in, #user-logged-in {
   margin-top: 25px;
@@ -139,24 +138,35 @@ p {
   padding: 30px;
 }
 
+img {
+  width: 95%;
+  margin-top:-50px;
+  margin-bottom: 0;
+
+}
+
 .register-login {
   border: 2px solid #F8F4E4;
   border-radius: 30px;
   background: rgba(12, 165, 176, 0.7);
-  width: 16em;
-  margin-top: 80px;
+  width: 18em;
+  margin-top: 2em;
   margin-right: 1em;
-  height: 20em;
+  height: 15em;
+}
+
+#register {
+  width:25em;
 }
 
 #register-login{
   float: right;
-  margin-right: 15%;
+  margin-right: 10%;
 }
 
 #results {
  float: left;
- margin-left: 5em;
+ margin-left: 3em;
  width: 85%;
  margin-top: -20px;
 }
@@ -166,16 +176,23 @@ p {
   position: relative;
 }
 
-.loginbox {
+.loginbox, .registerbox {
   font-size: 1em;
   font-family: Verdana,Arial,sans-serif;
   border: 1px solid #F8F4E4;
   background: #0CA5B0;
   color: #ffffff;
   border-radius: 8px;
-  width: 8em;
   padding: 10px;
   margin: 0.5em;
+}
+
+.loginbox {
+  width: 8em;
+  margin-bottom: 1em;
+}
+.registerbox {
+  width: 7em;
 }
 
 .resultsholder {
@@ -195,4 +212,5 @@ p {
 #secondary_results {
   height: 14em;
   padding-bottom: 2px;
+  margin-bottom: 2em;
 }
