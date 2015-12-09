@@ -17,7 +17,7 @@ end
 post '/' do
   # filter data
 
-  user_car = {
+  @user_car = {
   "make" => params[:make],
   "model" => params[:model],
   "style" => params[:style],
@@ -41,6 +41,8 @@ post '/' do
   p user_car
 
   @possible_matched_cars = search_for_matches(user_car)
+
+
 
   erb :results
 
