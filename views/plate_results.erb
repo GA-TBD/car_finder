@@ -6,8 +6,13 @@
     <% if @plate_match_car %>
     <p><i class="material-icons">beenhere</i><span>Good news!</span> We <span> found </span> a car with # <%=@user_car['plate']%>, get it here: </p>
     <p><span><i class="material-icons">pin_drop</i><%=@plate_match_car['towed_to_address']%></span> call them at <span><%=@plate_match_car['tow_facility_phone']%><span> or <span> Get Google Map Directions!</span>
+        <%if @plate_match_car['towed_to_address'] == '10300 S. Doty Ave'%>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47661.34999353584!2d-87.60958735912415!3d41.702511048970244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e26503f071295%3A0xc8565ac27e503872!2s10300+S+Doty+Ave%2C+Chicago%2C+IL+60617!5e0!3m2!1sen!2sus!4v1449703934643" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <%elsif @plate_match_car['towed_to_address'] == '400 E. Lower Wacker'%>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.24763792779!2d-87.6196687845586!3d41.88753107922146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2b57b35b9deb%3A0x685b36316d36f2df!2s400+E+Lower+Wacker+Dr%2C+Chicago%2C+IL+60601!5e0!3m2!1sen!2sus!4v1449704121093" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <% end %> 
     <% else %>
-    <p> <span>Oh hey! </span> We <span> did not find </span> a car with # <%=@user_car['plate']%> in any of the Chicago lots! </p>
+    <p> We <span> did not find </span> a car with # <span><%=@user_car['plate']%></span> in any of the Chicago lots! </p>
     <p>Hope you find your car, dude! </p>
     <% end %>
   </div>

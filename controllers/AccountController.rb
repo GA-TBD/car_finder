@@ -84,6 +84,13 @@ class AccountController < ApplicationController
     erb :home
   end
 
+  post '/add_car' do
+    p '--------------/add_car route.  params are:'
+    p params
 
+    # TODO add car to database
+
+    erb :account_view
+  end
 
 end

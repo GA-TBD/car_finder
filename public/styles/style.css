@@ -76,12 +76,7 @@ label {
   font-weight: bolder;
 }
 
-.righteous-font {
-  display: block;
-  font-family: 'Righteous', cursive;
-  font-size: 1em;
-  font-weight: bolder;
-}
+
 
 select {
   width: 7em;
@@ -143,8 +138,8 @@ section {
 }
 
 p {
-  	font-family: Verdana,Arial,sans-serif;
-  	font-size: 0.9em;
+  	font-family: 'Righteous', cursive;
+  	font-size: 1.1em;
 }
 
 .other-views {
@@ -222,7 +217,7 @@ p {
 }
 
 #primary_results {
-  height: 2em;
+  height: 4em;
   padding-bottom: 2px;
 }
 
@@ -276,5 +271,9 @@ i {
 }
 
 span {
-
+  font-family: 'Righteous', cursive;
+  font-size: 1.6em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-color: #2980B9;
 }
