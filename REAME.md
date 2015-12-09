@@ -24,6 +24,9 @@
 * README.md
   * installation instructions
 
+* Not found erb
+
+
 ## FUTURE FEATURES - WANTED
 * handle httparty error
   * offline

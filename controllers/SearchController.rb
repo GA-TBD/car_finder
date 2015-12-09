@@ -33,6 +33,11 @@ post '/' do
 
   redirect '/results'
 
+<<<<<<< HEAD
+
+  erb :results
+=======
+>>>>>>> 7c677c7ee3b848b67a9de815098815a26c8e4dd8
 end
 
 end

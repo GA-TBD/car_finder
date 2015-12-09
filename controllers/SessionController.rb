@@ -1,9 +1,9 @@
 class SessionController < ApplicationController
 
 
-  get '/registration' do
-     erb :registration
-  end
+  # get '/registration' do
+  #    erb :registration
+  # end
 
   post '/registration' do
     puts params
@@ -47,9 +47,9 @@ class SessionController < ApplicationController
 
 
 
-  get '/login' do
-    erb :login
-  end
+  # get '/login' do
+  #   erb :login
+  # end
 
   post '/login' do
     p params
@@ -66,16 +66,16 @@ class SessionController < ApplicationController
         @status_msg = "Welcome back, " + current_user.user_name + "!"
         # @items = session[:current_user].shopping_items
         # return erb :item_read
-        redirect '/item_read'
+        redirect '/session/account_view'
       else
         @status_msg = "Invalid password!"
-        return erb :login
+        return erb :registration_login
       end
 
     # Current user not found
     else
       @status_msg = 'Username invalid!'
-      return erb :login
+      return erb :registration_login
     end
   end
 
