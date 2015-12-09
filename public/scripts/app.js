@@ -1,4 +1,7 @@
-$(function() {
+
+
+
+  $(function() {
 
 
   $( "#make" )
@@ -52,3 +55,11 @@ function showCarResults() {
 function showRegisterLogin() {
   window.location.href = "/register_login";
 }
+
+
+// IF ROUTE = '/' do what's below
+// $('#no-user-logged-in').show('blind', 'slow', function(){
+//   $('#searchbyplate').show('blind', 'slow', function(){
+//     $('#searchbycar').show('blind', 'slow');
+//   });
+// });

@@ -1,5 +1,7 @@
+
+
 <!-- <div id="results"> -->
-<!-- <%if @type_of_search="plate"%> -->
+<!-- <%if user_car.searchtype="plate"%> -->
 
 <div class="resultsholder" id="primary_results">
   <h3 class="other-views-header"> exact liscence plate match: </h3>
@@ -8,10 +10,9 @@
     <p>oh noes we don't know where your car is!</p>
   </div>
 </div>
+<!-- <%elsif user_car.searchtype="car"%> -->
 <div class="resultsholder"  id="secondary_results">
   <h3 class="other-views-header"> full search results: </h3>
 </div>
-<!-- <%elsif @type_of_search="car"%> -->
-
 <!-- <% end %> -->
 <!-- </div> -->

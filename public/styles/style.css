@@ -18,6 +18,10 @@ h3 {
   color: white;
 }
 
+/*#searchbyplate, #searchbycar, #user-logged-in,*/
+ #no-user-logged-in {
+  display: none;
+}
 
 .login-header {
   margin-top: -1.1em;
