@@ -45,16 +45,18 @@
 
 
 function showPlateResults() {
-  window.location.href = "/results";
+  window.location.href = "/plate_results";
 }
 
 function showCarResults() {
-  window.location.href = "/results";
+  window.location.href = "/car_results";
 }
 
 function showRegisterLogin() {
   window.location.href = "/register_login";
 }
+
+
 
 
 // IF ROUTE = '/' do what's below

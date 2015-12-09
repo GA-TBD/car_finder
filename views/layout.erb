@@ -6,7 +6,7 @@
   <title>Home</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script src="scripts/jquery-ui.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Courgette|Lobster+Two|Righteous' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette|Lobster+Two|Righteous|Material+Icons  ' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/jquery-ui.css">
   <link rel="stylesheet" href="styles/jquery-ui.theme.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -17,7 +17,7 @@
   <section class="searchby">
     <div id="searchbyplate">
     <h3> search lots by plate: </h3>
-    <form action="session/register" method="post">
+    <form action="/" method="post">
         <fieldset>
         <table>
         <tr>
@@ -36,7 +36,7 @@
     </form>
     <div id ="searchbycar">
       <h3> search lots by car: </h3>
-      <form action="/">
+      <form action="/" method="post">
               <fieldset>
                 <table>
                 <tr>
@@ -293,15 +293,17 @@
           </form>
           </div>
 
-
+          <!-- <% if get_current_user_if_exists = nil %> -->
         <div id="no-user-logged-in">
           <div class="button-item" onclick="showRegisterLogin()">↪ login </div>
           <div class="button-item" onclick="showRegisterLogin()">✎ register </div>
         </div>
+          <!-- <% else %> -->
         <div id="user-logged-in">
           <div class="button-item">✌ my cars </div>
           <div class="button-item">⎋ logout </div>
         </div>
+          <!-- <% end %> -->
 
         <!-- some sort of embedded ruby user logic needs to toggle this ^  -->
 
@@ -309,7 +311,7 @@
 
 
     <section class = "other-views">
-      <p><img src = "http://i.imgur.com/O4Xp82h.gif"></p>
+      <p><img class="logo" src = "http://i.imgur.com/O4Xp82h.gif"></p>
       <%= yield %>
     </section>
 
