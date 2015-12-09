@@ -13,6 +13,7 @@ get '/register_login' do
   erb :register_login
 end
 
+
 post '/' do
   # filter data
 
@@ -25,19 +26,24 @@ post '/' do
   "plate" => params[:plate],
   }
 
+  # need @type_of_search logic (i need it on the other side)
+
+  # (below is pseudo code)
+
+  # if user car object coming in has state + plate
+  #   @type_of_search= 'plate'
+  # else
+  #   @type_of_search= 'plate'
+  # end
+
   p '--------------posted search params received and stored in user_car'
   p 'user_car: '
   p user_car
 
   @possible_matched_cars = search_for_matches(user_car)
 
-  redirect '/results'
-
-<<<<<<< HEAD
-
   erb :results
-=======
->>>>>>> 7c677c7ee3b848b67a9de815098815a26c8e4dd8
+
 end
 
 end

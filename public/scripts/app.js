@@ -44,6 +44,7 @@ $(function() {
 function showPlateResults() {
   window.location.href = "/results";
 }
+
 function showCarResults() {
   window.location.href = "/results";
 }

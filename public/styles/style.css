@@ -6,7 +6,7 @@ body {
   background-image: url('http://i.imgur.com/5ngwe6C.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 1em;
+  padding-top: 1.2em;
 }
 
 h3 {
@@ -141,7 +141,7 @@ p {
 img {
   width: 95%;
   margin-top:-50px;
-  margin-bottom: 0;
+  margin-bottom: -10px;
 
 }
 
@@ -152,7 +152,7 @@ img {
   width: 18em;
   margin-top: 2em;
   margin-right: 1em;
-  height: 15em;
+  height: 16em;
 }
 
 #register {
@@ -162,6 +162,7 @@ img {
 #register-login{
   float: right;
   margin-right: 10%;
+  padding-top: 15px;
 }
 
 #results {
