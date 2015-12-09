@@ -1,0 +1,41 @@
+# TODO ITEMS
+
+## OPEN ISSUES/BUGS
+* httparty only retrieves 1000 items
+
+
+
+
+## FEATURES/TODOS - NEEDED FOR MVC
+* database
+  * define relationships
+  * add database
+
+* user login/registering
+  * restrict resources / session stuff
+  * hide show elements/features based
+    on if you are logged in or not
+
+* views
+
+
+* install on server
+
+* README.md
+  * installation instructions
+
+## FUTURE FEATURES - WANTED
+* handle httparty error
+  * offline
+  * doesn't respond.  timeout. This happened while testing!
+* debug account that displays some cars in the lots
+
+
+# CLOSED OUT FEATURES & ISSUES
+
+## CLOSED ISSUES
+* got food and nap in on monday afternoon after freaking out
+
+
+## FEATURES - IMPLEMENTED
+* Search function implemented and unit tested
