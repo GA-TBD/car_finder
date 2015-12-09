@@ -28,12 +28,14 @@
 
 
 ## FUTURE FEATURES - WANTED
+* make responsive
 * seperate search algorithm by plate & by car info
 * handle httparty error
   * offline
   * doesn't respond.  timeout. This happened while testing!
+* handle database commit errors
 * debug account that displays some cars in the lots
-
+* move helpers out of app controller and into module
 
 # CLOSED OUT FEATURES & ISSUES
 
