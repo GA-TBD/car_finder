@@ -64,7 +64,7 @@ class ApplicationController < Sinatra::Base
       user_car['tow_date'] = "this_better_not_match_or_the_chi_pd_is_really_screwing_up"
     end
 
-    binding.pry
+    # binding.pry
 
     all_cars.each do |towed_car|
       if user_car['plate'] == towed_car['plate'] &&

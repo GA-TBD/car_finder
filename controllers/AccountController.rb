@@ -1,4 +1,4 @@
-class SessionController < ApplicationController
+class AccountController < ApplicationController
 
 
   # get '/registration' do

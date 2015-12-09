@@ -7,6 +7,9 @@
 
 
 ## FEATURES/TODOS - NEEDED FOR MVC
+* Rename session controller to account controller
+* add car from search results page
+  * see that hidden params are passed in to route
 * database
   * define relationships
   * add database
