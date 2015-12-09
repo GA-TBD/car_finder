@@ -23,7 +23,7 @@ post '/' do
   @possible_matched_cars = search_for_matches(user_car)
 
 
-  erb :index
+  erb :results
 end
 
 end
