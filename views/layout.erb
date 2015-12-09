@@ -18,7 +18,7 @@
   <section class="searchby">
     <div id="searchbyplate">
     <h3> search by plate: </h3>
-    <!-- <form action="#"> -->
+    <form action="/session/register" method="post">
         <fieldset>
         <table>
         <tr>
@@ -32,12 +32,12 @@
         </td>
         </tr>
         </table>
-        <input class="search-button" type="submit" value="☞ SEARCH" onclick="showResults()"></input>
+        <input class="search-button" type="submit" value="☞ SEARCH" onclick="showPlateResults()"></input>
         </fieldset>
-    <!-- </form> -->
+    </form>
     <div id ="searchbycar">
       <h3> search by car: </h3>
-      <!-- <form action="#"> -->
+      <form action="#">
               <fieldset>
                 <table>
                 <tr>
@@ -289,9 +289,9 @@
               </td>
               </tr>
               </table>
-                <input class="search-button" type="submit" value="☞ SEARCH" onclick="showResults()"></input>
+                <input class="search-button" type="submit" value="☞ SEARCH" onclick="showCarResults()"></input>
               </fieldset>
-            <!-- </form> -->
+            </form>
           </div>
 
 
