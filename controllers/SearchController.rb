@@ -30,7 +30,7 @@ post '/' do
   p user_car
 
   @possible_matched_cars = search_for_matches(user_car)
-  
+
   redirect '/results'
 
 <<<<<<< HEAD
