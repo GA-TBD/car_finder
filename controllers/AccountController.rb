@@ -1,5 +1,10 @@
 class AccountController < ApplicationController
 
+  get '/mycars' do
+    @saved_cars = Saved_Car.all
+    erb :account_view
+  end
+
 
   post '/register' do
     p '------------------inside /register route!'
@@ -30,7 +35,7 @@ class AccountController < ApplicationController
         p '-----------------registration successful------------------'
         # @items = session[:current_user].shopping_items
         # erb :item_read
-        erb :account_view
+        redirect '/account/mycars'
 
       else
         @status_msg = 'Invalid password or password doesn\'t match'
@@ -65,7 +70,8 @@ class AccountController < ApplicationController
         # @items = session[:current_user].shopping_items
         # return erb :item_read
         p '--------------User Logged in Successfully!  going to erb :account_view'
-        erb :account_view
+        redirect '/account/mycars'
+
       else
         @status_msg = "Invalid password!"
         p '-----------------Invalid password!---------------'
@@ -83,7 +89,11 @@ class AccountController < ApplicationController
 
   get '/logout' do
     session[:current_user]=nil
-    erb :home
+    erb :register_login
+  end
+
+  get '/register_login' do
+    erb :register_login
   end
 
   post '/add_car' do
@@ -91,6 +101,7 @@ class AccountController < ApplicationController
     p params
 
     if user_is_logged_in
+<<<<<<< HEAD
       car = Saved_Car.new
       car.plate = params[:plate]
       car.state = params[:state]
@@ -101,7 +112,8 @@ class AccountController < ApplicationController
       car.id_of_user = session[:current_user].id
       car.save
       p '------------car should be now be added in DB. check it yo'
-      erb :account_view
+      redirect '/account/mycars'
+
     else
       p '------------trying to save car but not logged in!!'
       # stash the car to be saved
