@@ -41,6 +41,30 @@ class ApplicationController < Sinatra::Base
     end
   end
 
+  def add_car_that_user_tried_to_add_before_being_logged_in
+    p '---------trying to add stashed car'
+    # if a car was stashed from user trying to add a car before being logged in or registered
+    if user_is_logged_in && session[:stashed_car] != nil
+      car = Saved_Car.new
+      p session[:stashed_car]['plate']
+      p session[:stashed_car]['state']
+      p session[:stashed_car]['make']
+      p session[:stashed_car]['mode']
+      p session[:stashed_car]['style']
+      p session[:stashed_car]['color']
+      p session[:current_user].id
+
+      car.plate = session[:stashed_car]['plate']
+      car.state = session[:stashed_car]['state']
+      car.make = session[:stashed_car]['make']
+      car.model = session[:stashed_car]['mode']
+      car.style = session[:stashed_car]['style']
+      car.color = session[:stashed_car]['color']
+      car.id_of_user = session[:current_user].id
+      car.save
+    end
+
+  end
 
   ########## SEARCH HELPERS ########
 
