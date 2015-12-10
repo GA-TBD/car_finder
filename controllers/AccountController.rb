@@ -34,11 +34,14 @@ class AccountController < ApplicationController
 
       else
         @status_msg = 'Invalid password or password doesn\'t match'
+        p '-----------------Invalid password or password doesn\'t match------------------'
         erb :register_login
       end
     # username already taken
     else
       @status_msg = 'Username taken already!'
+      p '-----------------Username taken already!-----------------'
+
       erb :register_login
     end
 
@@ -61,16 +64,20 @@ class AccountController < ApplicationController
         @status_msg = "Welcome back, " + current_user.user_name + "!"
         # @items = session[:current_user].shopping_items
         # return erb :item_read
+        p '--------------User Logged in Successfully!  going to erb :account_view'
         erb :account_view
       else
         @status_msg = "Invalid password!"
-        return erb :registration_login
+        p '-----------------Invalid password!---------------'
+        return erb :register_login
       end
 
     # Current user not found
     else
-      @status_msg = 'Username invalid!'
-      return erb :registration_login
+      @status_msg = 'Username not found!'
+      p '-----------------Username not found!----------------'
+
+      return erb :register_login
     end
   end
 
