@@ -130,4 +130,12 @@ class AccountController < ApplicationController
     end # user_is_logged_in
   end   # end post '/add_car' route
 
+  post '/delete_car/:plate' do
+    @car_to_delete = Saved_Car.find_by(plate: params[:plate])
+    @car_to_delete.destroy
+
+    erb :account_view
+
+  end
+
 end

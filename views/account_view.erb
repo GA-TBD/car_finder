@@ -32,10 +32,10 @@
         <input type="hidden" name="color" value="<%=car['color']%>"></input>
       <td><input type="submit" class="car-search-btn" value="" tooltip="search for car"></input></form></td>
       <td>
-      <form class="" action="index.html" method="post">
-        <input type="submit" class="car-delete-btn" value="" tooltip="delete this car"></input>
+
+      <form action="/account/delete_car/<%=car['plate']%>" method="post">
+        <input type="submit" class="car-delete-btn" value="" tooltip="delete this car"></input></form>
       </td></tr>
-      </form>
       <% end %>
     </tbody>
 </div>
