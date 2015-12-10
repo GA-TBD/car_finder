@@ -35,6 +35,7 @@ class AccountController < ApplicationController
         p '-----------------registration successful------------------'
         # @items = session[:current_user].shopping_items
         # erb :item_read
+        add_car_that_user_tried_to_add_before_being_logged_in
         redirect '/account/mycars'
 
       else
@@ -70,6 +71,7 @@ class AccountController < ApplicationController
         # @items = session[:current_user].shopping_items
         # return erb :item_read
         p '--------------User Logged in Successfully!  going to erb :account_view'
+        add_car_that_user_tried_to_add_before_being_logged_in
         redirect '/account/mycars'
 
       else
@@ -118,7 +120,7 @@ class AccountController < ApplicationController
     else
       p '------------trying to save car but not logged in!!'
       # stash the car to be saved
-      session[:temp_car] = {
+      session[:stashed_car] = {
         'plate' => params[:plate],
         'state' => params[:state],
         'make' => params[:make],
@@ -126,7 +128,7 @@ class AccountController < ApplicationController
         'style' => params[:style],
         'color' => params[:color]
       }
-
+      @status_msg = 'Log in or register to save that car!'
       erb :register_login
 
     end # user_is_logged_in
