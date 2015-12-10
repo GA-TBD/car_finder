@@ -6,7 +6,7 @@ body {
   background-image: url('http://i.imgur.com/5ngwe6C.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 1.2em;
+  padding-top: 6px;
 }
 
 h3 {
@@ -26,11 +26,10 @@ h2 {
   color: white;
 }
 
-/*#searchbyplate, #searchbycar, #user-logged-in,*/
- #no-user-logged-in {
-  display: none;
+p {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 1em;
 }
-
 .login-header {
   margin-top: -1.1em;
   font-size: 3em;
@@ -79,8 +78,7 @@ label {
 
 
 select {
-  width: 7em;
-  font-size: 1em;
+  width: 120px;
 }
 
 .overflow {
@@ -137,14 +135,14 @@ section {
   float: left;
 }
 
-p {
+.plaintext {
   	font-family: 'Righteous', cursive;
   	font-size: 1.1em;
 }
 
 .other-views {
   float: right;
-  width: 70%;
+  width: 65%;
   height:  30em;
   padding: 30px;
 }
@@ -217,7 +215,6 @@ p {
 }
 
 #primary_results {
-  height: 4em;
   padding-bottom: 2px;
 }
 
@@ -227,35 +224,18 @@ p {
   margin-bottom: 2em;
 }
 
-.material-icons2 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 40px;  /* Preferred icon size */
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-}
 
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 40px;  /* Preferred icon size */
+  font-size: 30px;  /* Preferred icon size */
   display: inline-block;
   width: 1em;
-  height: 1em;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
+  margin-bottom: -40px;
+  color: white;
 }
 
-i {
-  margin-bottom: 20px;
-}
 
 .message {
   font-size: 1em;
@@ -270,10 +250,17 @@ i {
   margin-right: auto;
 }
 
-span {
+.big {
   font-family: 'Righteous', cursive;
   font-size: 1.6em;
   font-weight: bolder;
   text-transform: uppercase;
-  font-color: #2980B9;
+  color: #F8F4E4;
+}
+
+.address {
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+  line-height: 0.1;
+  color: #F8F4E4;
 }

@@ -1,23 +1,39 @@
 <div class="other-view-holder"  id="secondary_results">
   <h3 class="other-views-header"> full search results: </h3>
-  <% for car in @possible_matched_cars %>
-  <li>
+
+  <div id="results-scroll">
+  <table>
+    <thead>
+    <div align="center">
+    <tr><td> PLATE </td>
+    <td><td> STATE </td>
+    <td> MAKE </td>
+    <td> MODEL </td>
+    <td> STYLE </td>
+    <td> COLOR </td>
+    <td>LOCATION</td>
+    <td> ADD </td></tr>
+    </thead><tbody>
+    <% for car in @possible_matched_cars %>
+    <tr>
       <form action="account/add_car" method="post">
-      Plate: <%=car['plate']%>,
-      State: <%=car['state']%>,
-      Make: <%=car['make']%>,
-      Model: <%=car['model']%>,
-      Style: <%=car['style']%>,
-      Color: <%=car['color']%>,
-      Location: <%= car['towed_to_address'] %><%= car['tow_facility_phone'] %>
+      <td><%=car['plate']%></td>
+      <td><%=car['state']%></td>
+      <td><%=car['make']%></td>
+      <td><%=car['model']%></td>
+      <td><%=car['style']%></td>
+      <td><%=car['color']%></td>
+      <td><%=car['towed_to_address']%> | <%=car['tow_facility_phone']%></td>
       <input type="hidden" name="plate" value="<%=car['plate']%>"></input>
       <input type="hidden" name="state" value="<%=car['state']%>"></input>
       <input type="hidden" name="make" value="<%=car['make']%>"></input>
       <input type="hidden" name="model" value="<%=car['model']%>"></input>
       <input type="hidden" name="style" value="<%=car['style']%>"></input>
       <input type="hidden" name="color" value="<%=car['color']%>"></input>
-      <input type="submit" class="car-add-btn" value="add car"></input>
+      <td><input type="submit" class="car-add-btn" value="☜" tooltip="add to My Cars"></input></td></tr>
       </form>
-  </li>
   <% end %>
+  </tbody>
+  </table>
+  </div>
 </div>
