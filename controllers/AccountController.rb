@@ -101,7 +101,6 @@ class AccountController < ApplicationController
     p params
 
     if user_is_logged_in
-<<<<<<< HEAD
       car = Saved_Car.new
       car.plate = params[:plate]
       car.state = params[:state]
