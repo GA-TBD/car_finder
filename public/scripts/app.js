@@ -44,10 +44,6 @@
 
 
 
-function showPlateResults() {
-  window.location.href = "/plate_results";
-}
-
 
 
 

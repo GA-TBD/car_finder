@@ -87,6 +87,40 @@ fieldset {
   background-image: url('/images/addcarA.svg');
 }
 
+
+.car-search-btn {
+  background-image: url('/images/searchcarG.svg');
+  background-repeat: no-repeat;
+  font-family: 'Courgette', cursive;
+  background-color: rgba(0, 0, 0, 0);;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  display: inline;
+  border: none;
+}
+
+.car-search-btn:hover {
+  background-image: url('/images/searchcarA.svg');
+}
+
+
+.car-delete-btn {
+  background-image: url('/images/deletecarG.svg');
+  background-repeat: no-repeat;
+  font-family: 'Courgette', cursive;
+  background-color: rgba(0, 0, 0, 0);;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  display: inline;
+  border: none;
+}
+
+.car-delete-btn:hover {
+  background-image: url('/images/deletecarA.svg');
+}
+
 label {
   display: block;
   font-family: 'Righteous', cursive;
@@ -134,7 +168,9 @@ td {
   padding: 10px;
 }
 
-
+.small {
+  font-size: 0.6em;
+}
 .search-button, .submit-button {
   border: 1px solid white;
   background: #0CA5B0;

@@ -11,7 +11,7 @@
     <td> style </td>
     <td> color </td>
     <td> search </td>
-    <td> delete </td>
+    <td> delete? </td>
     </tr>
     </thead>
     <tbody class ="table-body">
@@ -23,7 +23,19 @@
         <td><%=car['model']%></td>
         <td><%=car['style']%></td>
         <td><%=car['color']%></td>
-      <td>  </td></tr>
+      <form action="/" method="post">
+        <input type="hidden" name="plate" value="<%=car['plate']%>"></input>
+        <input type="hidden" name="state" value="<%=car['state']%>"></input>
+        <input type="hidden" name="make" value="<%=car['make']%>"></input>
+        <input type="hidden" name="model" value="<%=car['model']%>"></input>
+        <input type="hidden" name="style" value="<%=car['style']%>"></input>
+        <input type="hidden" name="color" value="<%=car['color']%>"></input>
+      <td><input type="submit" class="car-search-btn" value="" tooltip="search for car"></input></form></td>
+      <td>
+
+      <form action="/account/delete_car/<%=car['plate']%>" method="post">
+        <input type="submit" class="car-delete-btn" value="" tooltip="delete this car"></input></form>
+      </td></tr>
       <% end %>
     </tbody>
 </div>

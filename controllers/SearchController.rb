@@ -13,11 +13,6 @@ get '/plate_results' do
 end
 
 
-get '/register_login' do
-  erb :register_login
-end
-
-
 post '/' do
   # filter data
 
