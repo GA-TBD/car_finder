@@ -1,12 +1,11 @@
 class AccountController < ApplicationController
 
 
-  # get '/registration' do
-  #    erb :registration
-  # end
-
-  post '/registration' do
+  post '/register' do
+    p '------------------inside /register route!'
     puts params
+
+    # binding.pry
 
     current_user = Account.find_by(user_name: params[:username])
     p current_user
@@ -14,7 +13,7 @@ class AccountController < ApplicationController
     # current username doesn't exists
     if current_user == nil
       # selected password is not empty & the password matches password confirmation
-      if ( params[:password] != nil ) && (params[:password] == params[:password_conf])
+      if ( params[:password] != nil ) && (params[:password] == params[:password_confirm])
         # create database entry for user
         current_user = Account.new
         current_user.user_name = params[:username]
@@ -31,25 +30,21 @@ class AccountController < ApplicationController
         p '-----------------registration successful------------------'
         # @items = session[:current_user].shopping_items
         # erb :item_read
-        redirect '/item_read'
+        erb :account_view
 
       else
         @status_msg = 'Invalid password or password doesn\'t match'
-        erb :registration
+        erb :register_login
       end
-      # username already taken
+    # username already taken
     else
       @status_msg = 'Username taken already!'
-      erb :registration
+      erb :register_login
     end
 
   end
 
 
-
-  # get '/login' do
-  #   erb :login
-  # end
 
   post '/login' do
     p params
@@ -66,7 +61,7 @@ class AccountController < ApplicationController
         @status_msg = "Welcome back, " + current_user.user_name + "!"
         # @items = session[:current_user].shopping_items
         # return erb :item_read
-        redirect '/session/account_view'
+        erb :account_view
       else
         @status_msg = "Invalid password!"
         return erb :registration_login
