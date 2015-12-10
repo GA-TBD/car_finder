@@ -7,35 +7,30 @@
 
 ## FEATURES/TODOS - NEEDED FOR MVC
 * add car from search results page
-  * see that hidden params are passed in to route
-  * if not logged in go to register page
+  * x if logged in save car
+  * if not logged in go to register page and save car if registered successfully
 * add car button from plate search results & description results
- * go to register page and pass on data if 
-
-* for car description search, handle no matches
-* account view needs to be implemented
-
+ * go to register page and pass on data if
+* update saved car
+* delete saved car
 * user login/registering
-  * restrict resources / session stuff
-  * hide show elements/features based
-    on if you are logged in or not
-  * double check that user calls on the layout page all work (blocks out appropriately depending on user/guest)
-* Not authorized route!  Protect all routes that need login!
-
-* views
-  * build out account_view
-  * build out car_results:
-    * add dynamic list viewing
-    * loop through ERB
-
-
+  * x allow registration
+  * x allow login
+  * Not authorized route! restrict resources / session stuff
+  * x hide show elements/features based on if you are logged in or not
+* build out account_view
+  * @ all_cars
+* x build out car_results:
+  * x add dynamic list viewing
+  * x loop through ERB
+* for car description search, handle no matches in the view
+* Logout
 
 * install on server
 
 * README.md
   * installation instructions
-
-* Not found erb
+  * description, technology used, etc.  see james
 
 
 ## FUTURE FEATURES - WANTED
@@ -54,6 +49,11 @@
 * database
   * define relationships
   * add database
+* x Not found route/erb
 
 ## CLOSED ISSUES
 * got food and nap in on monday afternoon after freaking out
+
+
+## Interesting stories
+# embedded ruby hack

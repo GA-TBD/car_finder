@@ -100,19 +100,31 @@ class AccountController < ApplicationController
     p '--------------/add_car route.  params are:'
     p params
 
-
     if user_is_logged_in
-      @car = Saved_Car.new
-      @car.plate = params[:plate]
-      @car.state = params[:state]
-      @car.make = params[:make]
-      @car.model = params[:model]
-      @car.style = params[:style]
-      @car.color = params[:color]
-      @car.id_of_user = session[:current_user].id
-      @car.save
+      car = Saved_Car.new
+      car.plate = params[:plate]
+      car.state = params[:state]
+      car.make = params[:make]
+      car.model = params[:model]
+      car.style = params[:style]
+      car.color = params[:color]
+      car.id_of_user = session[:current_user].id
+      car.save
+      p '------------car should be now be added in DB. check it yo'
       redirect '/account/mycars'
+
     else
+      p '------------trying to save car but not logged in!!'
+      # stash the car to be saved
+      session[:temp_car] = {
+        'plate' => params[:plate],
+        'state' => params[:state],
+        'make' => params[:make],
+        'model' => params[:model],
+        'style' => params[:style],
+        'color' => params[:color]
+      }
+
       erb :register_login
 
     end # user_is_logged_in
