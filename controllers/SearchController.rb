@@ -43,7 +43,11 @@ post '/' do
     erb :plate_results
   else
     p '---------------This is a car description search! Calling helper search_by_car_description()'
+    @no_match = false
     @possible_matched_cars = search_by_car_description(@user_car)
+    if @possible_matched_cars == nil
+      @no_match = true
+    end
     erb :car_results
   end
 end
