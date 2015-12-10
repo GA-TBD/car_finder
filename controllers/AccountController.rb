@@ -89,7 +89,9 @@ class AccountController < ApplicationController
 
   get '/logout' do
     session[:current_user]=nil
+
     erb :register_login
+
   end
 
   get '/register_login' do
