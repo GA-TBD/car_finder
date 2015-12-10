@@ -91,9 +91,7 @@ class AccountController < ApplicationController
 
   get '/logout' do
     session[:current_user]=nil
-
     erb :register_login
-
   end
 
   get '/register_login' do
@@ -133,14 +131,5 @@ class AccountController < ApplicationController
 
     end # user_is_logged_in
   end   # end post '/add_car' route
-
-  post '/delete_car/:plate' do
-    @car_to_delete = Saved_Car.find_by(plate: params[:plate])
-    puts @car_to_delete
-    @car_to_delete.destroy
-
-    redirect "/account/mycars"
-
-  end
 
 end
