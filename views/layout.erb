@@ -293,7 +293,7 @@
           </form>
           </div>
 
-        <% if session[:current_user] == nil %>
+        <% if user_is_logged_in == false %>
         <div id="no-user-logged-in">
           <div class="button-item" onclick="showRegisterLogin()">↪ login </div>
           <div class="button-item" onclick="showRegisterLogin()">✎ register </div>

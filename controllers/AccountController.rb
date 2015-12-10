@@ -90,9 +90,22 @@ class AccountController < ApplicationController
     p '--------------/add_car route.  params are:'
     p params
 
-    # TODO add car to database
 
-    erb :account_view
-  end
+    if user_is_logged_in
+      @car = Saved_Car.new
+      @car.plate = params[:plate]
+      @car.state = params[:state]
+      @car.make = params[:make]
+      @car.model = params[:model]
+      @car.style = params[:style]
+      @car.color = params[:color]
+      @car.id_of_user = session[:current_user].id
+      @car.save
+      erb :account_view
+    else
+      erb :register_login
+
+    end # user_is_logged_in
+  end   # end post '/add_car' route
 
 end
