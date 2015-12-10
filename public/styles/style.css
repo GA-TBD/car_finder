@@ -75,6 +75,17 @@ label {
   font-weight: bolder;
 }
 
+.table-header {
+  font-family: 'Courgette', cursive;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.table-body {
+  font-family: 'Righteous', cursive;
+  font-size: 1em;
+}
+
 
 
 select {
@@ -174,13 +185,6 @@ section {
   padding-top: 15px;
 }
 
-#results {
- float: left;
- margin-left: 3em;
- width: 85%;
- margin-top: -20px;
-}
-
 .inputform {
   padding: 2em;
   position: relative;
@@ -214,15 +218,17 @@ section {
   width: 85%;
 }
 
-#primary_results {
+#plate-search-results {
   padding-bottom: 2px;
 }
 
-#secondary_results {
-  height: 14em;
+#car-search-results {
   padding-bottom: 2px;
   margin-bottom: 2em;
+  overflow: scroll;
+  height: 300px;
 }
+
 
 
 .material-icons {

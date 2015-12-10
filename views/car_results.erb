@@ -1,20 +1,22 @@
-<div class="other-view-holder"  id="secondary_results">
+<div class="other-view-holder"  id="car-search-results">
   <h3 class="other-views-header"> full search results: </h3>
 
   <div id="results-scroll">
   <table>
-    <thead>
+    <thead class="table-header">
     <div align="center">
-    <tr><td> PLATE </td>
-    <td><td> STATE </td>
-    <td> MAKE </td>
-    <td> MODEL </td>
-    <td> STYLE </td>
-    <td> COLOR </td>
-    <td>LOCATION</td>
-    <td> ADD </td></tr>
-    </thead><tbody>
-    <% for car in @possible_matched_cars %>
+    <tr>
+    <td> plate </td>
+    <td> state </td>
+    <td> make </td>
+    <td> model </td>
+    <td> style </td>
+    <td> color </td>
+    <td> location </td>
+    <td> add </td></tr>
+    </thead>
+    <tbody class ="table-body">
+    <% for car in @possible_matched_cars%>
     <tr>
       <form action="account/add_car" method="post">
       <td><%=car['plate']%></td>
@@ -32,7 +34,7 @@
       <input type="hidden" name="color" value="<%=car['color']%>"></input>
       <td><input type="submit" class="car-add-btn" value="☜" tooltip="add to My Cars"></input></td></tr>
       </form>
-  <% end %>
+      <% end %>
   </tbody>
   </table>
   </div>
