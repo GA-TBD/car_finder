@@ -136,9 +136,10 @@ class AccountController < ApplicationController
 
   post '/delete_car/:plate' do
     @car_to_delete = Saved_Car.find_by(plate: params[:plate])
+    puts @car_to_delete
     @car_to_delete.destroy
 
-    erb :account_view
+    redirect "/account/mycars"
 
   end
 
