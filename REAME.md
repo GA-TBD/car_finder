@@ -2,6 +2,7 @@
 
 ## OPEN ISSUES/BUGS
 * httparty only retrieves 1000 items
+* fix no match happening
 
 
 ## FEATURES/TODOS - NEEDED FOR MVC
@@ -40,7 +41,7 @@
   * offline
   * doesn't respond.  timeout. This happened while testing!
 * debug account that displays some cars in the lots
-
+* add 4th tier match (2 attributes only)
 
 # CLOSED OUT FEATURES & ISSUES
 
