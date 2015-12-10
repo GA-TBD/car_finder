@@ -20,7 +20,19 @@ class ApplicationController < Sinatra::Base
   # enable session support for our application
   enable :sessions
 
-  # Helper Functions here
+  ############################ HELPER FUNCTIONS BELOW #########################
+  #############################################################################
+
+  ########## ACCOUNT RELATED HELPERS ########
+
+  def user_is_logged_in
+    if session[:current_user] != nil
+      return true
+    else
+      return false
+    end
+  end
+
   def authorization_check
     if session[:current_user] == nil
       redirect '/not_authorized'
@@ -29,6 +41,8 @@ class ApplicationController < Sinatra::Base
     end
   end
 
+
+  ########## SEARCH HELPERS ########
 
   def search_by_plate(user_car)
     # get all cars towed in database
@@ -148,5 +162,10 @@ class ApplicationController < Sinatra::Base
 
   # binding.pry
   end
+
+
+
+
+
 
 end

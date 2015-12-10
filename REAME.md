@@ -6,18 +6,21 @@
 
 
 ## FEATURES/TODOS - NEEDED FOR MVC
-* Rename session controller to account controller
 * add car from search results page
   * see that hidden params are passed in to route
-* database
-  * define relationships
-  * add database
+  * if not logged in go to register page
+* add car button from plate search results & description results
+ * go to register page and pass on data if 
+
+* for car description search, handle no matches
+* account view needs to be implemented
 
 * user login/registering
   * restrict resources / session stuff
   * hide show elements/features based
     on if you are logged in or not
   * double check that user calls on the layout page all work (blocks out appropriately depending on user/guest)
+* Not authorized route!  Protect all routes that need login!
 
 * views
   * build out account_view
@@ -45,9 +48,12 @@
 
 # CLOSED OUT FEATURES & ISSUES
 
-## CLOSED ISSUES
-* got food and nap in on monday afternoon after freaking out
-
-
 ## FEATURES - IMPLEMENTED
 * Search function implemented and unit tested
+* Rename session controller to account controller
+* database
+  * define relationships
+  * add database
+
+## CLOSED ISSUES
+* got food and nap in on monday afternoon after freaking out
