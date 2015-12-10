@@ -17,14 +17,15 @@
     </thead>
     <tbody class ="table-body">
     <% for car in @possible_matched_cars%>
-    <tr>
+    <tr class="table-row">
       <form action="account/add_car" method="post">
+
       <td><%=car['plate']%></td>
       <td><%=car['state']%></td>
-      <td><%=car['make']%></td>
-      <td><%=car['model']%></td>
-      <td><%=car['style']%></td>
-      <td><%=car['color']%></td>
+      <td <%if car['make'] != @user_car['make']%> class="strike"<%end%>><%=car['make']%></td>
+      <td <%if car['model'] != @user_car['model']%> class="strike"<%end%>><%=car['model']%></td>
+      <td <%if car['style'] != @user_car['style']%> class="strike"<%end%>><%=car['style']%></td>
+      <td <%if car['color'] != @user_car['color']%> class="strike"<%end%>><%=car['color']%></td>
       <td><%=car['towed_to_address']%> | <%=car['tow_facility_phone']%></td>
       <input type="hidden" name="plate" value="<%=car['plate']%>"></input>
       <input type="hidden" name="state" value="<%=car['state']%>"></input>
@@ -32,7 +33,7 @@
       <input type="hidden" name="model" value="<%=car['model']%>"></input>
       <input type="hidden" name="style" value="<%=car['style']%>"></input>
       <input type="hidden" name="color" value="<%=car['color']%>"></input>
-      <td><input type="submit" class="car-add-btn" value="☜" tooltip="add to My Cars"></input></td></tr>
+      <td><input type="submit" class="car-add-btn" value="" tooltip="add to My Cars"></input></td></tr>
       </form>
       <% end %>
   </tbody>

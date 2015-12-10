@@ -68,6 +68,21 @@ fieldset {
   display: inline;
 }
 
+.car-add-btn {
+    background-image: url('/images/addcarG.svg');
+  background-repeat: no-repeat;
+  font-family: 'Courgette', cursive;
+  background-color: rgba(0, 0, 0, 0);;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  display: inline;
+}
+
+.car-add-btn:hover {
+  background-image: url('/images/addcarA.svg');
+}
+
 label {
   display: block;
   font-family: 'Righteous', cursive;
@@ -86,6 +101,12 @@ label {
   font-size: 1em;
 }
 
+.strike {
+  text-decoration: line-through;
+  font-family: 'Righteous', cursive;
+  font-size: 1em;
+  font-weight: lighter;
+}
 
 
 select {
@@ -94,6 +115,10 @@ select {
 
 .overflow {
   height: 150px;
+}
+
+.table-row:hover {
+  background-color: #0CA5B0;
 }
 
 td {
@@ -228,7 +253,6 @@ section {
   overflow: scroll;
   height: 300px;
 }
-
 
 
 .material-icons {
