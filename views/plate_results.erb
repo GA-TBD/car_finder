@@ -7,9 +7,18 @@
     <table>
     <tr><td>
     <div align="center">
-    <p class="plaintext">Good news! We found a car with <span class="big">#<%=@user_car['plate']%></span>, get it here: </p>
+    <form class="" action="account/add_car" method="post">
+    <p class="plaintext">Good news! We found a car with <span class="big"> #<%=@user_car['plate']%></span>, get it here: </p>
     <p class="address"><i class="material-icons">pin_drop</i><%=@plate_match_car['towed_to_address']%></p>
-    <p><span><i class="material-icons">local_phone</i><%=@plate_match_car['tow_facility_phone']%></span></p>
+    <p><span class="big">☎<%=@plate_match_car['tow_facility_phone']%></span></p>
+    <input type="hidden" name="plate" value="<%=@plate_match_car['plate']%>"></input>
+    <input type="hidden" name="state" value="<%=@plate_match_car['state']%>"></input>
+    <input type="hidden" name="make" value="<%=@plate_match_car['make']%>"></input>
+    <input type="hidden" name="model" value="<%=@plate_match_car['model']%>"></input>
+    <input type="hidden" name="style" value="<%=@plate_match_car['style']%>"></input>
+    <input type="hidden" name="color" value="<%=@plate_match_car['color']%>"></input>
+    <p> <input type="submit" class="car-add-btn" tooltip="add to My Cars" value=""></input></p>
+    </form>
     </div>
     </td><td>
         <%if @plate_match_car['towed_to_address'] == '10300 S. Doty'%>
