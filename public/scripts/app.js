@@ -1,6 +1,6 @@
 
 
-
+//function to set overflows
   $(function() {
 
 
@@ -30,26 +30,11 @@
                       .addClass( "overflow" );
 });
 
-//
-// function toggle(toggler, thingToggled) {
-//   $("#"+toggler).toggle(function() {
-//     $("#"+thingToggled).show('fast', function() {
-//       //animation occured
-//     });
-//   }, function() {
-//     $("#"+thingToggled).hide('fast', function() {
-//       //animation occured
-//     });
-//   });
 
+$('#add-car-trigger').on('click', function(event) {
+    $('#add-car-form').show('slow');
+  });
 
+$(document).ready(function() {
 
-
-
-
-// IF ROUTE = '/' do what's below
-// $('#no-user-logged-in').show('blind', 'slow', function(){
-//   $('#searchbyplate').show('blind', 'slow', function(){
-//     $('#searchbycar').show('blind', 'slow');
-//   });
-// });
+});
