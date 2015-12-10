@@ -295,13 +295,13 @@
 
         <% if user_is_logged_in == false %>
         <div id="no-user-logged-in">
-          <div class="button-item" onclick="showRegisterLogin()">↪ login </div>
-          <div class="button-item" onclick="showRegisterLogin()">✎ register </div>
+          <a href="/account/register_login"><div class="button-item" onclick="showRegisterLogin()">↪ login </div></a>
+          <a href="/account/register_login"><div class="button-item" onclick="showRegisterLogin()">✎ register </div></a>
         </div>
         <% else %>
         <div id="user-logged-in">
-          <div class="button-item">✌ my cars </div>
-          <div class="button-item">➲ logout </div>
+          <a href = "/account/mycars"><div class="button-item">✌ my cars </div></a>
+          <a href = "/account/logout"><div class="button-item">➲ logout </div></a> 
         </div>
         <% end %>
 

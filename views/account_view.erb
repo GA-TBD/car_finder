@@ -1,4 +1,29 @@
 <div class="other-view-holder"  id="account_page">
   <h3 class="other-views-header"><%= session[:current_user].user_name%>'s cars</h3>
-  <p> account view skeleton </p>
+  <table>
+    <thead class="table-header">
+    <div align="center">
+    <tr>
+    <td> plate </td>
+    <td> state </td>
+    <td> make </td>
+    <td> model </td>
+    <td> style </td>
+    <td> color </td>
+    <td> search </td>
+    <td> delete </td>
+    </tr>
+    </thead>
+    <tbody class ="table-body">
+    <%for car in @saved_cars %>
+      <tr>
+        <td><%=car['plate']%></td>
+        <td><%=car['state']%></td>
+        <td><%=car['make']%></td>
+        <td><%=car['model']%></td>
+        <td><%=car['style']%></td>
+        <td><%=car['color']%></td>
+      <td>  </td></tr>
+      <% end %>
+    </tbody>
 </div>
