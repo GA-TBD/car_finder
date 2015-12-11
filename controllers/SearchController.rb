@@ -38,9 +38,10 @@ post '/' do
     p '---------------This is a car description search! Calling helper search_by_car_description()'
     @no_match = false
     @possible_matched_cars = search_by_car_description(@user_car)
-    if @possible_matched_cars == nil
+    if @possible_matched_cars.length < 1
       @no_match = true
     end
+    # binding.pry
     erb :car_results
   end
 end
