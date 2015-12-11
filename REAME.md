@@ -3,7 +3,8 @@
 ## OPEN ISSUES/BUGS
 * httparty only retrieves 1000 items
 * fix no match happening
-
+* protect against multiple adds of same car
+* only allow adds for license match / exact match
 
 ## FEATURES/TODOS - NEEDED FOR MVC
 
