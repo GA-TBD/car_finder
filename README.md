@@ -50,9 +50,14 @@ From a handy guide written by James Traver
 8. bundle
 10. apt-get install build-essential -- plox
 11. apt-get install ruby-dev
-Install the app
+#### Install the app
 1. git clone https://github.com/GA-TBD/car_finder.git
-Run the app
+
+#### Create database
+1. psql
+2. Run the commands in /db/migrations.sql
+
+#### Run the app
 1. nohup bundle exec rackup -p 80 --host 0.0.0.0 &
   * nohup - Allows the app to run even after terminal is closed.
   * "-p 80"  specifies port 80
