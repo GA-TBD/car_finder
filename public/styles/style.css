@@ -346,3 +346,7 @@ td {
 #add-car-form {
   display: none;
 }
+
+.primary-results-message {
+  margin-top: 20px; 
+}
