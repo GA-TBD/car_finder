@@ -350,3 +350,11 @@ td {
 .primary-results-message {
   margin-top: 20px;
 }
+
+.footer {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+  font-family: 'Righteous', cursive;
+  font-size: 1em;
+}
