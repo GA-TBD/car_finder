@@ -12,21 +12,15 @@ body {
   padding-top: 6px;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Courgette', cursive;
   font-size: 2em;
   margin-bottom: -5px;
-  margin-top: 10px;
-  margin-left: 20px;
   color: white;
 }
 
 h2 {
-  font-family: 'Courgette', cursive;
   font-size: 3em;
-  margin-top: 10px;
-  margin-left: 20px;
-  color: white;
 }
 
 h3 {
@@ -49,7 +43,11 @@ p {
 .other-views-header {
   margin-top: -3.1em;
   font-size: 2em;
-  margin-left: -1em;
+  margin-right: 20px;
+}
+
+.no_match {
+  margin-top: 20px; 
 }
 
 fieldset {
@@ -215,9 +213,9 @@ td {
   padding: 10px;
 }
 
-section {
+/*section {
   display: inline;
-}
+}*/
 
 .plaintext {
   	font-family: 'Righteous', cursive;
@@ -227,30 +225,18 @@ section {
 
 .logo {
   width: 95%;
-  margin-top: -30px;
+  margin-top: 10px;
   margin-bottom: -10px;
 
 }
 
-.register-login {
+#register, #login {
   border: 2px solid #F8F4E4;
   border-radius: 30px;
   background: rgba(12, 165, 176, 0.7);
-  width: 18em;
-  margin-right: 1em;
-  height: 16em;
   margin-top: 20px;
 }
 
-#register {
-  width:25em;
-}
-
-#register-login{
-  float: right;
-  margin-right: 10%;
-  padding-top: 15px;
-}
 
 .inputform {
   padding: 2em;
@@ -269,11 +255,12 @@ section {
 }
 
 .loginbox {
-  width: 8em;
+  width: 9em;
   margin-bottom: 1em;
 }
 .registerbox {
-  width: 7em;
+  width: 9em;
+  margin-left: 1em;
 }
 
 .other-view-holder {
@@ -282,7 +269,10 @@ section {
   background: rgba(12, 165, 176, 0.7);
   margin-top: 3em;
   padding: 4em;
-  width: 85%;
+}
+
+#searchbyplate, #searchbycar {
+  margin-top: 10px;
 }
 
 #plate-search-results {
@@ -292,8 +282,9 @@ section {
 #car-search-results {
   padding-bottom: 2px;
   margin-bottom: 2em;
+  margin-left: 2em;
   overflow: scroll;
-  height: 300px;
+  height: 200px;
 }
 
 
@@ -310,6 +301,7 @@ section {
 
 
 .message {
+  font-family: 'Righteous', cursive;
   font-size: 1em;
   width: 7em;
   background: #0CA5B0;
@@ -339,6 +331,6 @@ section {
 }
 
 #add-car-form {
-  /*display: none;*/
+  display: none;
   margin-left: 3em;
 }

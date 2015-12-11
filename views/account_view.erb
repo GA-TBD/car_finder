@@ -1,6 +1,7 @@
 
-<div class="other-view-holder"  id="account_page">
+<div class="other-view-holder ten columns" id="account_page">
   <h3 class="other-views-header"><%= session[:current_user].user_name%>'s cars</h3>
+  <div align = "center">
   <table>
     <thead class="table-header">
     <div align="center">
@@ -40,8 +41,8 @@
       <% end %>
     </tbody>
   </table>
-    <h3 id="add-car-trigger">⊕ add another car?</h3>
-    <div id ="add-car-form">
+    <h3 id="add-car-trigger">⊕ add a car?</h3>
+    <!-- <div id ="add-car-form">
       <form action="account/add_car" method="post">
                 <table>
                 <tr>
@@ -306,5 +307,6 @@
                 </tr>
               </table>
         </form>
-      </div>
+      </div> -->
     </div>
+  </div>

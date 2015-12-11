@@ -70,7 +70,6 @@ class AccountController < ApplicationController
       # Password matches database! Go to list!
       if current_user.password == params[:password]
         session[:current_user] = current_user
-        @status_msg = "Welcome back, " + current_user.user_name + "!"
         # @items = session[:current_user].shopping_items
         # return erb :item_read
         p '--------------User Logged in Successfully!  going to erb :account_view'
