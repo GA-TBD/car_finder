@@ -104,7 +104,7 @@ class AccountController < ApplicationController
   end
 
   post '/add_car' do
-    authorization_check
+
 
     p '--------------/add_car route.  params are:'
     p params
@@ -141,7 +141,7 @@ class AccountController < ApplicationController
 
   post '/delete_car' do
     # authorization_check
-    binding.pry
+    # binding.pry
     @car_to_delete = Saved_Car.find_by(id: params['id'])
     @car_to_delete.destroy
 
