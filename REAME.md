@@ -3,8 +3,10 @@
 ## OPEN ISSUES/BUGS
 * httparty only retrieves 1000 items
 * fix no match happening
-* protect against multiple adds of same car
+* protect against multiple adds of same car for a user
 * only allow adds for license match / exact match
+* guard against failed database calls
+  * .destroy on nil object because didn't find it first
 
 ## FEATURES/TODOS - NEEDED FOR MVC
 

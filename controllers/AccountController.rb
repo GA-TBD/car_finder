@@ -140,9 +140,10 @@ class AccountController < ApplicationController
     end # user_is_logged_in
   end   # end post '/add_car' route
 
-  post '/delete_car/:plate' do
-    authorization_check
-    @car_to_delete = Saved_Car.find_by(plate: params[:plate])
+  post '/delete_car' do
+    # authorization_check
+    binding.pry
+    @car_to_delete = Saved_Car.find_by(id: params['id'])
     @car_to_delete.destroy
 
     redirect "/account/mycars"

@@ -34,7 +34,8 @@
       <td><input type="submit" class="car-search-btn" value="" tooltip="search for car"></input></form></td>
       <td>
 
-      <form action="/account/delete_car/<%=car['plate']%>" method="post">
+      <form action="/account/delete_car" method="post">
+        <input type="hidden" name="id" value="<%=car['id']%>"></input>
         <input type="submit" class="car-delete-btn" value="" tooltip="delete this car"></input></form>
       </td></tr>
       <% end %>
