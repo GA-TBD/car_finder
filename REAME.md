@@ -2,13 +2,32 @@
 Find out if your car is towed in the city of Chicago!  
 --A TEAM TBD creation
 
+<<<<<<< HEAD
+=======
 #### Dude? Where's your car?
 
+>>>>>>> 0392cd47ab579365abdf586259587efbd23754b0
 ## Technologies Used
 * FRONT-END: HTML, CSS, Javascript
 * BACK-END: Ruby, Sinatra Framework, ActiveRecord ORM, postgresql
 
 ## Approach taken
+
+#### Planning Phase
+We started by discussing user stories and then doodled out all the possible actions a user would take on our page.
+This helped us to create our detailed wire frame that lays out every possible route, view, and functionality we would need to build in.
+
+![MainWireFrame](https://ga-students.slack.com/files/simkhosla/F0G3VBG6A/fullmap.jpg)
+
+## Installation Instructions
+## Unsolved problems
+
+
+
+#
+
+# TODO ITEMS
+=======
 We started by discussing user stories and then doodled out all the possible actions a user would take on our page.
 This helped us to create our detailed wire frame that lays out every possible route, view, and functionality we would need to build in.
 
