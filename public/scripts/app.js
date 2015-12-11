@@ -1,19 +1,5 @@
 
-
-
-
-$(document).ready(function() {
-  //trigger show form
-  $( '#add-car-trigger' ).click(function(event) {
-    $( '#add-car-trigger').toggle(function() {
-      $('#add-car-form').show('slow');
-    }, function() {
-      $('#add-car-form').hide('slow');
-    });
-    });
-    
-  });
-
+//jquery UI triggers
   $(function() {
 
     $( "#make" )
@@ -57,3 +43,16 @@ $(document).ready(function() {
                                     .addClass( "overflow" );
 
 });
+
+
+
+
+$(document).ready(function() {
+
+  $( "#add-car-trigger" ).click(function() {
+    $( "#add-car-form" ).toggle( "slow", function() {
+      // Animation complete.
+    });
+  });
+
+  });
