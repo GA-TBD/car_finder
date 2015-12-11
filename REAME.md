@@ -7,21 +7,24 @@
 
 ## FEATURES/TODOS - NEEDED FOR MVC
 
-* user authorization helper function
-* write backend ruby that designates @saved_cars as specific to current user
-* Car search -- add NO MATCH response
-* add 4th tier match (2 attributes only)
+* user authorization helper function -d
+* Car search -- add NO MATCH response -s
+
+* make RESPONSIVE!!!!! - s
+
 * install on server - tomorrow
+
 * README.md
   * installation instructions
   * description, technology used, etc.  see james
 
+* test the shiz outta it
 
 ## FUTURE FEATURES - WANTED
-* handle httparty error
+* add 4th tier match (2 attributes only) -s
+* handle httparty error - d
   * offline
   * doesn't respond.  timeout. This happened while testing!
-* debug account that displays some cars in the lots
 * update saved car
 
 
@@ -47,7 +50,8 @@ x build out car_results:
       * x hide show elements/features based on if you are logged in or not
 * x build out account_view
         * @ all_cars
-        * seperate search algorithm by plate & by car info
+        * seperate search algorithm by plate & by car info        
+* write backend ruby that designates @saved_cars as specific to current user
 
 
 ## CLOSED ISSUES

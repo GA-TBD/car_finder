@@ -1,3 +1,4 @@
+
 <div class="other-view-holder"  id="account_page">
   <h3 class="other-views-header"><%= session[:current_user].user_name%>'s cars</h3>
   <table>
@@ -52,6 +53,8 @@
                   <label for="state">STATE:</label>
                   <input class="textbox" type ="text" name="state" id="state" required></input>
                 </td>
+                </tr>
+                <tr>
                 <td>
                 <label for="make">MAKE:</label>
                 <select name="make" id="make">
@@ -236,8 +239,8 @@
                           <option>	YUK	</option>
                     </select>
                   </td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                   <td>
                   <label for="style">STYLE:</label>
                   <select name="style" id="style">
@@ -301,12 +304,7 @@
                   </select>
                 </td>
                 </tr>
-              <tr>
-
               </table>
-
         </form>
+      </div>
     </div>
-</div>
-
-<!-- onclick="showCarForm() -->

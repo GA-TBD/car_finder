@@ -219,23 +219,11 @@ section {
   display: inline;
 }
 
-
-.searchby {
-  width: 25%;
-  float: left;
-}
-
 .plaintext {
   	font-family: 'Righteous', cursive;
   	font-size: 1.1em;
 }
 
-.other-views {
-  float: right;
-  width: 65%;
-  height:  30em;
-  padding: 30px;
-}
 
 .logo {
   width: 95%;
@@ -351,5 +339,6 @@ section {
 }
 
 #add-car-form {
-  display: none;
+  /*display: none;*/
+  margin-left: 3em;
 }
