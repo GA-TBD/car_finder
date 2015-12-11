@@ -1,17 +1,16 @@
 <div class="other-view-holder"  id="car-search-results">
   <h1 class="other-views-header"> full search results: </h1>
-  <% if @no_match = "true"%>
+  <% if @no_match == true%>
   <div align="center" class="no_match">
   <p class="plaintext"> We <span class="big"> did not find </span> a car with those search parameters in any of the Chicago lots! </p>
   <p class="plaintext">Hope you find your car, dude! </p>
-  </div> 
+  </div>
   <% else %>
   <table>
     <thead class="table-header">
     <div align="center">
     <tr>
     <td> plate </td>
-    <td> state </td>
     <td> make </td>
     <td> model </td>
     <td> style </td>
@@ -24,7 +23,6 @@
     <tr class="table-row">
       <form action="account/add_car" method="post">
       <td><%=car['plate']%></td>
-      <td><%=car['state']%></td>
       <td <%if car['make'] != @user_car['make']%> class="strike"<%end%>><%=car['make']%></td>
       <td <%if car['model'] != @user_car['model']%> class="strike"<%end%>><%=car['model']%></td>
       <td <%if car['style'] != @user_car['style']%> class="strike"<%end%>><%=car['style']%></td>
@@ -36,9 +34,12 @@
       <input type="hidden" name="model" value="<%=car['model']%>"></input>
       <input type="hidden" name="style" value="<%=car['style']%>"></input>
       <input type="hidden" name="color" value="<%=car['color']%>"></input>
-      <td><input type="submit" class="car-add-btn" value="" tooltip="add to My Cars"></input></td></tr>
+      <td>
+        <% if car['plate'] != nil %>
+        <input type="submit" class="car-add-btn" value="" tooltip="add to My Cars"></input></td></tr>
+        <% end %>
       </form>
-      <% end %>
+        <% end %>
   </tbody>
   </table>
   <% end %>

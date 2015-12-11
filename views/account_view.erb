@@ -42,94 +42,118 @@
     </tbody>
   </table>
     <h3 id="add-car-trigger">⊕ add a car?</h3>
-    <!-- <div id ="add-car-form">
+    <div id ="add-car-form">
       <form action="account/add_car" method="post">
                 <table>
                 <tr>
                 <td>
-                  <label for="plate">PLATE:</label>
-                  <input class="textbox" type ="text" name="plate" id="plate" required></input>
+                  <label for="make">MAKE:</label>
+                  <select name="make" id="make2">
+                      <option selected = "selected">--</option>
+                        <option>	ACUR	</option>
+                          <option>	AUDI	</option>
+                          <option>	BMW	</option>
+                          <option>	BUIC	</option>
+                          <option>	CADI	</option>
+                          <option>	CHEV	</option>
+                          <option>	CHRY	</option>
+                          <option>	DODG	</option>
+                          <option>	FIAT	</option>
+                          <option>	FORD	</option>
+                          <option>	GMC	</option>
+                          <option>	HOND	</option>
+                          <option>	HYUN	</option>
+                          <option>	INFI	</option>
+                          <option>	JEEP	</option>
+                          <option>	KIA	</option>
+                          <option>	LEXS	</option>
+                          <option>	MAZD	</option>
+                          <option>	MITS	</option>
+                          <option>	NISS	</option>
+                          <option>	OLDS	</option>
+                          <option>	PLYM	</option>
+                          <option>	PONT	</option>
+                          <option>	ROV	</option>
+                          <option>	TOYT	</option>
+                          <option>	VOLK	</option>
+                          <option>	GEO	</option>
+                          <option>	JAGU	</option>
+                          <option>	LINC	</option>
+                          <option>	MERC	</option>
+                          <option>	MERZ	</option>
+                          <option>	PORS	</option>
+                          <option>	SATR	</option>
+                          <option>	SUBA	</option>
+                          <option>	VOLV	</option>
+                          <option>	CHAA	</option>
+                          <option>	DAEW	</option>
+                          <option>	SAA	</option>
+                          <option>	ISU	</option>
+                          <option>	MINI	</option>
+                          <option>	SUZI	</option>
+                          <option>	OTTE	</option>
+                          <option>	ZCZY	</option>
+                          <option>	NIS	</option>
+                          <option>	HUMM	</option>
+                          <option>	SCIO	</option>
+                          <option>	VW	</option>
+                          <option>	LANR	</option>
+                          <option>	PORC	</option>
+                          <option>	DODD	</option>
+                          <option>	KAWK	</option>
+                          <option>	LAND	</option>
+                          <option>	EAGL	</option>
+                          <option>	JAG	</option>
+                          <option>	NIAG	</option>
+                          <option>	POND	</option>
+                          <option>	TOYO	</option>
+                          <option>	LNDR	</option>
+                          <option>	YAMA	</option>
+                          <option>	INTL	</option>
+                          <option>	DOO	</option>
+                          <option>	EZLD	</option>
+                          <option>	SATU	</option>
+                  </select>
                   </td>
                 <td>
-                  <label for="state">STATE:</label>
-                  <input class="textbox" type ="text" name="state" id="state" required></input>
+                  <label for="color">COLOR:</label>
+                  <select name="color" id="color2">
+                        <option selected = "selected">--</option>
+                          <option>	BLK	</option>
+                              <option>	BLU	</option>
+                              <option>	WHI	</option>
+                              <option>	RED	</option>
+                              <option>	GLD	</option>
+                              <option>	GRY	</option>
+                              <option>	TAN	</option>
+                              <option>	SIL	</option>
+                              <option>	MAR	</option>
+                              <option>	GRN	</option>
+                              <option>	ONG	</option>
+                              <option>	BRO	</option>
+                              <option>	PLE	</option>
+                              <option>	BGE	</option>
+                              <option>	YEL	</option>
+                              <option>	DBL	</option>
+                              <option>	BRZ	</option>
+                              <option>	LBL	</option>
+                              <option>	LGR	</option>
+                              <option>	COM	</option>
+                              <option>	DGR	</option>
+                              <option>	CPR	</option>
+                              <option>	CRM	</option>
+                              <option>	TRQ	</option>
+                  </select>
+                </td>
+                <td>
+                    <label for="plate">PLATE:</label>
+                    <input class="textbox" type ="text" name="plate" id="plate2" required></input>
                 </td>
                 </tr>
                 <tr>
                 <td>
-                <label for="make">MAKE:</label>
-                <select name="make" id="make">
-                    <option selected = "selected">--</option>
-                      <option>	ACUR	</option>
-                        <option>	AUDI	</option>
-                        <option>	BMW	</option>
-                        <option>	BUIC	</option>
-                        <option>	CADI	</option>
-                        <option>	CHEV	</option>
-                        <option>	CHRY	</option>
-                        <option>	DODG	</option>
-                        <option>	FIAT	</option>
-                        <option>	FORD	</option>
-                        <option>	GMC	</option>
-                        <option>	HOND	</option>
-                        <option>	HYUN	</option>
-                        <option>	INFI	</option>
-                        <option>	JEEP	</option>
-                        <option>	KIA	</option>
-                        <option>	LEXS	</option>
-                        <option>	MAZD	</option>
-                        <option>	MITS	</option>
-                        <option>	NISS	</option>
-                        <option>	OLDS	</option>
-                        <option>	PLYM	</option>
-                        <option>	PONT	</option>
-                        <option>	ROV	</option>
-                        <option>	TOYT	</option>
-                        <option>	VOLK	</option>
-                        <option>	GEO	</option>
-                        <option>	JAGU	</option>
-                        <option>	LINC	</option>
-                        <option>	MERC	</option>
-                        <option>	MERZ	</option>
-                        <option>	PORS	</option>
-                        <option>	SATR	</option>
-                        <option>	SUBA	</option>
-                        <option>	VOLV	</option>
-                        <option>	CHAA	</option>
-                        <option>	DAEW	</option>
-                        <option>	SAA	</option>
-                        <option>	ISU	</option>
-                        <option>	MINI	</option>
-                        <option>	SUZI	</option>
-                        <option>	OTTE	</option>
-                        <option>	ZCZY	</option>
-                        <option>	NIS	</option>
-                        <option>	HUMM	</option>
-                        <option>	SCIO	</option>
-                        <option>	VW	</option>
-                        <option>	LANR	</option>
-                        <option>	PORC	</option>
-                        <option>	DODD	</option>
-                        <option>	KAWK	</option>
-                        <option>	LAND	</option>
-                        <option>	EAGL	</option>
-                        <option>	JAG	</option>
-                        <option>	NIAG	</option>
-                        <option>	POND	</option>
-                        <option>	TOYO	</option>
-                        <option>	LNDR	</option>
-                        <option>	YAMA	</option>
-                        <option>	INTL	</option>
-                        <option>	DOO	</option>
-                        <option>	EZLD	</option>
-                        <option>	SATU	</option>
-                </select>
-                </td>
-                </tr>
-                <tr>
-                  <td>
                     <label for="model">MODEL:</label>
-                    <select name="model" id="model">
+                    <select name="model" id="model2">
                         <option selected = "selected">--</option>
                           <option>	535	</option>
                           <option>	88	</option>
@@ -240,11 +264,9 @@
                           <option>	YUK	</option>
                     </select>
                   </td>
-                </tr>
-                <tr>
                   <td>
                   <label for="style">STYLE:</label>
-                  <select name="style" id="style">
+                  <select name="style" id="style2">
                         <option selected = "selected">--</option>
                           <option>	4D	</option>
                           <option>	4T	</option>
@@ -275,38 +297,17 @@
                   </select>
                 </td>
                 <td>
-                  <label for="color">COLOR:</label>
-                  <select name="color" id="color">
-                        <option selected = "selected">--</option>
-                          <option>	BLK	</option>
-                              <option>	BLU	</option>
-                              <option>	WHI	</option>
-                              <option>	RED	</option>
-                              <option>	GLD	</option>
-                              <option>	GRY	</option>
-                              <option>	TAN	</option>
-                              <option>	SIL	</option>
-                              <option>	MAR	</option>
-                              <option>	GRN	</option>
-                              <option>	ONG	</option>
-                              <option>	BRO	</option>
-                              <option>	PLE	</option>
-                              <option>	BGE	</option>
-                              <option>	YEL	</option>
-                              <option>	DBL	</option>
-                              <option>	BRZ	</option>
-                              <option>	LBL	</option>
-                              <option>	LGR	</option>
-                              <option>	COM	</option>
-                              <option>	DGR	</option>
-                              <option>	CPR	</option>
-                              <option>	CRM	</option>
-                              <option>	TRQ	</option>
-                  </select>
+                  <label for="state">STATE:</label>
+                  <input class="textbox" type ="text" name="state" id="state2" required></input>
                 </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><input class="search-button" type="submit" value="☞ SEARCH"></input></td>
+                  <td></td>
                 </tr>
               </table>
         </form>
-      </div> -->
+      </div>
     </div>
   </div>

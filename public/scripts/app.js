@@ -2,48 +2,58 @@
 
 
 
-
-
-
 $(document).ready(function() {
   //trigger show form
-  $("#add-car-trigger").toggle(function() {
-      $( "#add-car-form" ).show('slow');
+  $( '#add-car-trigger' ).click(function(event) {
+    $( '#add-car-trigger').toggle(function() {
+      $('#add-car-form').show('slow');
     }, function() {
-      $( "#add-car-form").hide('slow')
+      $('#add-car-form').hide('slow');
     });
-
+    });
+    
   });
 
-
-  //function to set overflows styling -- from JqueryUI
-    $(function() {
-
+  $(function() {
 
     $( "#make" )
       .selectmenu()
       .selectmenu( "menuWidget" )
         .addClass( "overflow" );
 
-        $( "#style" )
+        $( "#model" )
           .selectmenu()
           .selectmenu( "menuWidget" )
             .addClass( "overflow" );
 
-            $( "#color" )
+            $( "#style" )
               .selectmenu()
               .selectmenu( "menuWidget" )
                 .addClass( "overflow" );
 
-                $( "#model" )
+                $( "#color" )
                   .selectmenu()
                   .selectmenu( "menuWidget" )
                     .addClass( "overflow" );
 
-                    $( "#date_towed" )
+                    $( "#make2" )
                       .selectmenu()
                       .selectmenu( "menuWidget" )
                         .addClass( "overflow" );
-  });
+
+                        $( "#model2" )
+                          .selectmenu()
+                          .selectmenu( "menuWidget" )
+                            .addClass( "overflow" );
+
+                            $( "#style2" )
+                              .selectmenu()
+                              .selectmenu( "menuWidget" )
+                                .addClass( "overflow" );
+
+                                $( "#color2" )
+                                  .selectmenu()
+                                  .selectmenu( "menuWidget" )
+                                    .addClass( "overflow" );
 
 });
