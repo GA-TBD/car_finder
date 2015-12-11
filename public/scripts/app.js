@@ -31,10 +31,12 @@
 });
 
 
-$('#add-car-trigger').on('click', function(event) {
-    $('#add-car-form').show('slow');
-  });
+
 
 $(document).ready(function() {
+
+  $("#add-car-trigger").on("click", function(){
+    $( "#add-car-form" ).show('slow');
+  });
 
 });

@@ -123,6 +123,7 @@ fieldset {
   height: 40px;
   display: inline;
   border: none;
+  margin-left: 10px;
 }
 
 .car-delete-btn:hover {
