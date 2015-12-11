@@ -1,37 +1,43 @@
-<div id="register-login">
+<div class = "ten columns" id="register-login">
 <table>
 <tr><td>
-<div class="register-login" id="login">
-<h1 class="login-header"><i class="material-icons">assignment_ind</i> login: </h1>
-<div align="center" class="inputform">
-  <form class="#" action="/account/login" method="post">
-    <input class="loginbox" type="text" name="username" placeholder="username"></input>
-    <input class="loginbox" type="password" name="password" placeholder="password"></input>
-    <input class="submit-button" type="submit" value="☞ SIGN IN!"></input>
-  </form>
-</div>
-</div>
+<div id="register">
+  <h1 class="login-header"><i class="material-icons">note_add</i> register:</h1>
+    <div align ="center" class="inputform">
+      <form action="/account/register" method="post">
+        <table>
+        <tr><td>
+        <input class="registerbox" type="text" name="username" placeholder="username"></input>
+        <input class="registerbox" type="email" name="email" placeholder="email"></input>
+      </td><td>
+        <input class="registerbox" type="password" name="password" placeholder="password"></input>
+        <input class="registerbox" type="password" name="password_confirm" placeholder="password x2"></input>
+      </td><tr>
+      </table>
+        <input class="submit-button" type="submit" value="☞ SIGN UP!"></input>
+      </form>
+    </div>
+  </div>
 </td>
 <td>
-<div class="register-login" id="register">
-<h1 class="login-header"><i class="material-icons">note_add</i> register:</h1>
-  <div align ="center" class="inputform">
-    <form action="/account/register" method="post">
-      <table>
-      <tr><td>
-      <input class="registerbox" type="text" name="username" placeholder="username"></input>
-      <input class="registerbox" type="email" name="email" placeholder="email"></input>
-    </td><td>
-      <input class="registerbox" type="password" name="password" placeholder="password"></input>
-      <input class="registerbox" type="password" name="password_confirm" placeholder="password x2"></input>
-    </td><tr>
-    </table>
-      <input class="submit-button" type="submit" value="☞ SIGN UP!"></input>
+  <div id="login">
+  <h1 class="login-header"><i class="material-icons">assignment_ind</i> login: </h1>
+  <div align="center" class="inputform">
+    <form class="#" action="/account/login" method="post">
+      <input class="loginbox" type="text" name="username" placeholder="username"></input>
+      <input class="loginbox" type="password" name="password" placeholder="password"></input>
+      <p><input class="submit-button" type="submit" value="☞ SIGN IN!"></input></p>
     </form>
   </div>
   </div>
   </td>
   </tr>
+  <tr>
+    <td>
+      <%if @status_msg %>
+      <div class= "message"><%=@status_msg%></div>
+      <% end %>
+    </td>
+  </tr>
   </table>
-
 </div>

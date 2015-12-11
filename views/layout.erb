@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chicago Tow Tracker</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-  <script src="scripts/jquery-ui.js"></script>
-  <link rel="stylesheet" href="styles/jquery-ui.css">
+  <script src="scripts/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="styles/jquery-ui.theme.css">
+  <link rel="stylesheet" href="styles/jquery-ui.css">
   <link href='https://fonts.googleapis.com/css?family=Courgette|Lobster+Two|Righteous|Material+Icons  ' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="public/styles/skeleton.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="styles/skeleton.css">
   <link rel="stylesheet" href="styles/style.css">
   <script type="text/javascript" src="scripts/app.js"></script>
 
 </head>
 <body>
-  <section class="six columns">
+  <section class="three columns">
     <div id="searchbyplate">
     <h1> search lots by plate: </h1>
     <form action="/" method="post">
@@ -32,7 +32,7 @@
         </td>
         </tr>
         </table>
-        <input class="search-button" type="submit" value="☞ SEARCH" onclick="showPlateResults()"></input>
+        <input class="search-button" type="submit" value="☞ SEARCH"></input>
         </fieldset>
     </form>
     <div id ="searchbycar">
@@ -309,7 +309,7 @@
       </section>
 
 
-    <section class = "other-views">
+    <section class = "nine columns">
       <p><img class="logo" src = "http://i.imgur.com/O4Xp82h.gif"></p>
       <%= yield %>
     </section>

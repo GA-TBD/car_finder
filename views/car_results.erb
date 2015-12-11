@@ -1,5 +1,11 @@
 <div class="other-view-holder"  id="car-search-results">
   <h1 class="other-views-header"> full search results: </h1>
+  <% if @no_match = "true"%>
+  <div align="center" class="no_match">
+  <p class="plaintext"> We <span class="big"> did not find </span> a car with those search parameters in any of the Chicago lots! </p>
+  <p class="plaintext">Hope you find your car, dude! </p>
+  </div> 
+  <% else %>
   <table>
     <thead class="table-header">
     <div align="center">
@@ -35,4 +41,5 @@
       <% end %>
   </tbody>
   </table>
+  <% end %>
 </div>
