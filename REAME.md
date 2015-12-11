@@ -1,5 +1,6 @@
 # TODO ITEMS
 
+
 ## OPEN ISSUES/BUGS
 * httparty only retrieves 1000 items
 * protect against multiple adds of same car for a user
@@ -10,11 +11,8 @@
 
 
 ## FEATURES/TODOS - NEEDED FOR MVC
-* add car
-* make RESPONSIVE!!!!! - s
 
-* test the shiz outta it
-* install on server - tomorrow
+
 * README.md
   * installation instructions
   * description, technology used, etc.  see james
@@ -56,11 +54,6 @@ x build out car_results:
         * @ all_cars
         * seperate search algorithm by plate & by car info        
 * write backend ruby that designates @saved_cars as specific to current user
-
-
-## CLOSED ISSUES
-* got food and nap in on monday afternoon after freaking out
-
-
-## Interesting stories
-* embedded ruby hack
+* add car
+* make RESPONSIVE!!!!!
+* install on server
