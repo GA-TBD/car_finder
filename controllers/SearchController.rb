@@ -14,8 +14,6 @@ end
 
 
 post '/' do
-  # filter data
-
   @user_car = {
     'make' => params[:make],
     'model' => params[:model],

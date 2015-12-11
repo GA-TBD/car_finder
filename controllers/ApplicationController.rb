@@ -65,8 +65,17 @@ class ApplicationController < Sinatra::Base
       car.save
     end
 
+    session[:stashed_car] = nil
   end
 
+  # helper functions will go here
+  def authorization_check
+    if session[:current_user] == nil
+      redirect '/not_authorized'
+    else
+      return true
+    end
+end
   ########## SEARCH HELPERS ########
 
   def search_by_plate(user_car)

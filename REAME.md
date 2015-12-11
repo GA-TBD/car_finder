@@ -2,25 +2,26 @@
 
 ## OPEN ISSUES/BUGS
 * httparty only retrieves 1000 items
-* fix no match happening
+* protect against multiple adds of same car for a user
+* only allow adds for license match / exact match ??  i think we should still
+* guard against failed database calls
+  * .destroy on nil object because didn't find it first
+* edit car = should we allow?
 
 
 ## FEATURES/TODOS - NEEDED FOR MVC
-
-* user authorization helper function -d
-* Car search -- add NO MATCH response -s
-
+* add car
 * make RESPONSIVE!!!!! - s
 
+* test the shiz outta it
 * install on server - tomorrow
-
 * README.md
   * installation instructions
   * description, technology used, etc.  see james
 
-* test the shiz outta it
 
 ## FUTURE FEATURES - WANTED
+* remove "state" match stuff because searcher doesn't really need it
 * add 4th tier match (2 attributes only) -s
 * handle httparty error - d
   * offline
@@ -29,6 +30,9 @@
 
 
 ## FEATURES - IMPLEMENTED
+* fix no match happening
+* Car search -- add NO MATCH response -s
+* user authorization helper function -d
 * Search function implemented and unit tested
 * Rename session controller to account controller
 * database

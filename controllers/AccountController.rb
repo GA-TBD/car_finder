@@ -1,6 +1,8 @@
 class AccountController < ApplicationController
 
   get '/mycars' do
+    authorization_check
+
     p session[:current_user].id
     # binding.pry
     @saved_cars = Saved_Car.where(id_of_user: session[:current_user]['id'])
@@ -92,6 +94,7 @@ class AccountController < ApplicationController
   end
 
   get '/logout' do
+    authorization_check
     session[:current_user]=nil
     erb :register_login
   end
@@ -101,6 +104,8 @@ class AccountController < ApplicationController
   end
 
   post '/add_car' do
+
+
     p '--------------/add_car route.  params are:'
     p params
 
@@ -134,12 +139,18 @@ class AccountController < ApplicationController
     end # user_is_logged_in
   end   # end post '/add_car' route
 
-  post '/delete_car/:plate' do
-    @car_to_delete = Saved_Car.find_by(plate: params[:plate])
+  post '/delete_car' do
+    # authorization_check
+    # binding.pry
+    @car_to_delete = Saved_Car.find_by(id: params['id'])
     @car_to_delete.destroy
 
     redirect "/account/mycars"
 
   end
 
+  get 'not_authorized' do
+    @status_msg = "Trying to sneak in the back door, eh?  Please log in or register!"
+    erb :register_login
+  end
 end
