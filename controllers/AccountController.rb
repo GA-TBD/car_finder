@@ -1,8 +1,10 @@
 class AccountController < ApplicationController
 
   get '/mycars' do
-    @saved_cars = Saved_Car.all
-    # :id_of_user
+    p session[:current_user].id
+    # binding.pry
+    @saved_cars = Saved_Car.where(id_of_user: session[:current_user]['id'])
+
     erb :account_view
   end
 

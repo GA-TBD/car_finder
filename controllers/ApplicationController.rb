@@ -45,6 +45,7 @@ class ApplicationController < Sinatra::Base
     p '---------trying to add stashed car'
     # if a car was stashed from user trying to add a car before being logged in or registered
     if user_is_logged_in && session[:stashed_car] != nil
+      p '-------going to save a stashed car'
       car = Saved_Car.new
       p session[:stashed_car]['plate']
       p session[:stashed_car]['state']
