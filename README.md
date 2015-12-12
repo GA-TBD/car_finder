@@ -2,11 +2,10 @@
 Find out if your car is towed in the city of Chicago!  
 --A TEAM TBD creation
 
-<<<<<<< HEAD
+![ChiTowTracker](http://i.imgur.com/wnjYIMs.jpg)
 =======
 #### Dude? Where's your car?
 
->>>>>>> 0392cd47ab579365abdf586259587efbd23754b0
 ## Technologies Used
 * FRONT-END: HTML, CSS, Javascript
 * BACK-END: Ruby, Sinatra Framework, ActiveRecord ORM, postgresql
