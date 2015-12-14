@@ -16,20 +16,6 @@ Find out if your car is towed in the city of Chicago!
 We started by discussing user stories and then doodled out all the possible actions a user would take on our page.
 This helped us to create our detailed wire frame that lays out every possible route, view, and functionality we would need to build in.
 
-![MainWireFrame](https://ga-students.slack.com/files/simkhosla/F0G3VBG6A/fullmap.jpg)
-
-## Installation Instructions
-## Unsolved problems
-
-
-
-#
-
-# TODO ITEMS
-=======
-We started by discussing user stories and then doodled out all the possible actions a user would take on our page.
-This helped us to create our detailed wire frame that lays out every possible route, view, and functionality we would need to build in.
-
 ![MainWireFrame](https://dl.dropboxusercontent.com/u/102602916/Wireframing/FULLMAP.jpg)
 
 We tried to map out the entire scope of the project early so we wouldn't be stepping on each others' toes during production. Wireframing is wonderful.
