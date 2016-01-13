@@ -2,7 +2,7 @@
 Find out if your car is towed in the city of Chicago!  
 --A TEAM TBD creation
 
-![ChiTowTracker](http://i.imgur.com/wnjYIMs.jpg)
+![ChiTowTracker](http://i.imgur.com/OxEHIt4.gif)
 =======
 #### Dude? Where's your car?
 
